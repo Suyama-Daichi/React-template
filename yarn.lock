@@ -370,6 +370,11 @@ convert-source-map@^1.5.0:
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.9.0.tgz#7faae62353fb4213366d0ca98358d22e8368b05f"
   integrity sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==
 
+copy-image-clipboard@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/copy-image-clipboard/-/copy-image-clipboard-2.1.2.tgz#7965038faa036b1aed451df207f14b52838286a1"
+  integrity sha512-3VCXVl2IpFfOyD8drv9DozcNlwmqBqxOlsgkEGyVAzadjlPk1go8YNZyy8QmTnwHPxSFpeCR9OdsStEdVK7qDA==
+
 cosmiconfig@^7.0.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-7.1.0.tgz#1443b9afa596b670082ea46cbd8f6a62b84635f6"

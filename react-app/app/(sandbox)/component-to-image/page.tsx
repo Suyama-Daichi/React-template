@@ -11,6 +11,7 @@ import {
 import { MenuButton } from "@/app/_components/MenuButton";
 import { ComponentProps, useRef } from "react";
 import html2canvas from "html2canvas";
+import { copyImageToClipboard } from "copy-image-clipboard";
 
 const ComponentToImage = () => {
   const ref = useRef<HTMLElement>(null);
@@ -18,12 +19,23 @@ const ComponentToImage = () => {
   const componentToImageHandler = async () => {
     if (!ref.current) return alert("要素取得エラー");
     const url = await html2canvas(ref.current).then((t) =>
-      t.toDataURL("img/png")
+      t.toDataURL("image/png")
     );
-    console.log(url);
+
+    return url;
   };
+
+  const copyComponentImageToClipboardHandler = async () => {
+    const url = await componentToImageHandler();
+    if (!url) return;
+    copyImageToClipboard(url);
+  };
+
   const menus: ComponentProps<typeof MenuButton>["menus"] = [
-    { title: "画像にして保存", onClick: componentToImageHandler },
+    {
+      title: "画像をクリップボードにコピー",
+      onClick: copyComponentImageToClipboardHandler,
+    },
   ];
 
   return (

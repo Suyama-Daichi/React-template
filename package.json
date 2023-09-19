@@ -4,6 +4,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.9",
     "@mui/material": "^5.14.10",
+    "copy-image-clipboard": "^2.1.2",
     "html2canvas": "^1.4.1"
   }
 }
